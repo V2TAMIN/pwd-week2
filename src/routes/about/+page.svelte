@@ -1,25 +1,15 @@
-<script>
-  let name = $state('');
-  let welcome = $derived(name ? `Hello, ${name}!` : 'Welcome!');
+<section class="card">
+  <h2>About this site</h2>
+  <p>
+    이 사이트는 SvelteKit 기본기와 배포를 연습하기 위한 미니 포트폴리오입니다.
+  </p>
 
-  function randomize() {
-    const msgs = [
-      '웹 개발 재밌다!',
-      'SvelteKit 금방 익힘',
-      'Vercel로 바로 배포!'
-    ];
+  <ul>
+    <li>Semantic HTML</li>
+    <li>Routing(정적/동적)</li>
+    <li>State / Derived / Effects</li>
+    <li>API Route</li>
+  </ul>
 
-    alert(msgs[Math.floor(Math.random() * msgs.length)]);
-  }
-</script>
-
-<h1>{welcome}</h1>
-
-<label>
-  Your name:
-  <input placeholder="type your name" bind:value={name} />
-</label>
-
-<p>미리보기: <strong>{name || '(입력 대기)'}</strong></p>
-
-<button onclick={randomize}>랜덤 메시지</button>
+  <p>권빛의 실전웹서비스개발 2주차 실습입니다.</p>
+</section>
